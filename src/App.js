@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import Login from "./pages/login";
-import './styles/App.css';
-/*import { BrowserRouter, Switch, Route } from 'react-router-dom'; */
+/* import { BrowserRouter, Switch, Route } from 'react-router-dom'; */
 import { Link, Route } from "wouter"
 import home from './pages/home';
 

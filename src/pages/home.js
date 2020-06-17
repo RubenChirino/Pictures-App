@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useLocation } from "wouter";
 import usePictures from "../hooks/usePictures";
+import ListOfPictures from "../components/ListOfPictures";
 
 export default function Home( { params } ){
 
@@ -14,8 +15,26 @@ export default function Home( { params } ){
 
     const {loading, pictures} = usePictures();
      
-    return(
-        pictures.map(({ author }) => <h1>${author}</h1>)
+    return( <div className="container">
+
+        <div className="row mt-4">
+            <ListOfPictures pictures={pictures} />
+        </div>
+    
+
+    </div>
+        
     );
 
 }
+
+/* 
+
+    <div class="row">
+  <div class="col">col</div>
+  <div class="col">col</div>
+  <div class="col">col</div>
+  <div class="col">col</div>
+</div>
+
+*/
