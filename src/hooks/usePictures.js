@@ -7,10 +7,11 @@ export default function usePictures(){
  
     const [loading, setLoading] = useState(false);
 
+    //For Pages
     const [loadingNextPage, setLoadingNextPage] = useState(false);
-
     const [page, setPage] = useState(INITIAL_PAGE); 
-
+    //---
+    
     const [pictures, setPictures] = useState([]); 
 
     const userName = sessionStorage.getItem('userName');

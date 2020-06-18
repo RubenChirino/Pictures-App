@@ -1,5 +1,4 @@
 import React from "react";
-//import usePictures from "../hooks/usePictures";
 import Pictures from "./Pictures";
 
 export default function ListOfPictures({ pictures }){

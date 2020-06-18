@@ -7,6 +7,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body{
+  background-color: black;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -17,4 +21,25 @@ code {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+}
+
+.images-sizes{
+  height: 231.45px; 
+}
+
+.title-detail-picture{
+    display: inline;
+}
+
+.size-img-text{
+  float: right;
+}
+
+@media screen and (max-width: 992px) {
+  .title-detail-picture {
+    display: inherit;
+  }
+  .size-img-text{
+    float: inherit;
+  }
 }

@@ -2,18 +2,19 @@ import React, { Fragment } from "react";
 import { useLocation } from "wouter";
 import usePictures from "../hooks/usePictures";
 import ListOfPictures from "../components/ListOfPictures";
-import SideBar from "../components/sidebar";
+import SideBar from "../components/sidebar"; 
 
 export default function Home(){  
 
     const [path, pushLocation] = useLocation();
 
+    //Security
     const userName = sessionStorage.getItem('userName');
-
     if(userName === null || userName === undefined){
         pushLocation('/');
     }   
-
+    //---
+     
     const {loading, pictures, setPage } = usePictures();
 
     function handleNextPage(){

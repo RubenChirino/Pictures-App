@@ -1,8 +1,6 @@
 import React from "react";
  
-export default function getPictures({limit = 9, page = 1} = {}){
-
-    //const apiURL= `https://picsum.photos/v2/list`; 
+export default function getPictures({limit = 9, page = 1} = {}){  
 
     const apiURL= `https://picsum.photos/v2/list?page=${page}&amp;limit=${limit}`;
     
