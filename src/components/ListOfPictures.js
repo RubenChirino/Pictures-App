@@ -13,9 +13,15 @@ export default function ListOfPictures({ pictures }){
     author={author} 
     url={url}
     download_url={download_url}
-        />
+    /> 
       )
 
     );
 
 }
+
+
+
+
+
+

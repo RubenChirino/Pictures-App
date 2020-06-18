@@ -12,9 +12,13 @@ export default function Home(){
 
     if(userName === null || userName === undefined){
         pushLocation('/');
-    } 
+    }   
 
-    const {loading, pictures} = usePictures();
+    const {loading, pictures, setPage } = usePictures();
+
+    function handleNextPage(){
+        setPage(prevPage => prevPage + 1);
+    }
 
     return( <Fragment>
          
@@ -24,24 +28,22 @@ export default function Home(){
 
         <h1>Hola a todos!</h1>
 
-        <div className="row mt-4">
-            <ListOfPictures pictures={pictures} />
+        <div className="row mt-4">   
+            <ListOfPictures pictures={pictures} /> 
         </div>
-    
+       
+        <div className="row justify-content-center mt-5 mb-3">
+
+            <div className="col-4 text-center">
+                <button className="btn btn-primary btn-lg" 
+                onClick={handleNextPage}>Get next page</button>
+            </div>
+            
+        </div>
+
     </div>
 
     </Fragment> 
     );
 
 }
-
-/* 
-
-    <div class="row">
-  <div class="col">col</div>
-  <div class="col">col</div>
-  <div class="col">col</div>
-  <div class="col">col</div>
-</div>
-
-*/
