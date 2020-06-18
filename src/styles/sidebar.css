@@ -28,9 +28,9 @@ body{
     top: 0;
 }
 
-#sidemenu a{
+#sidemenu .option{
     color: white;
-    text-decoration: none;
+    cursor: pointer;
 }
 
 /*
@@ -81,6 +81,7 @@ body{
     border-bottom: solid 1px var(--hovercolor);
     padding: var(--padding) 0;
     text-align: center;
+    margin-bottom: 5px;
 }
 
 #sidemenu #profile #photo{
@@ -123,11 +124,11 @@ body{
     display: inline-block;
 }
 
-#sidemenu #menu-items .item a{
+#sidemenu #menu-items .item .option{
     display: block;
 }
 
-#sidemenu #menu-items .item a:hover{
+#sidemenu #menu-items .item .option:hover{
     background-color: var(--hovercolor);
 }
 
@@ -148,7 +149,7 @@ body{
 #sidemenu #menu-items .item.separator{
     height: 1px;
     border-bottom: solid 1px var(--hovercolor);
-    margin: 15px 0;
+    margin: 5px 0;
 }
 
 

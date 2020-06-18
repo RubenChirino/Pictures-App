@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from "react";
+import React, { useEffect, useState, Fragment } from "react";
 import { useLocation } from "wouter";
 
 export default function Login(){
@@ -7,9 +7,9 @@ export default function Login(){
 
     const [incorrect, setIncorrect] = useState(false);
 
-function handleOnClick(){
-   // pushLocation('/Home');
-}
+    useEffect(function(){
+        sessionStorage.clear();
+    }, [])
 
 function handleSubmit(e){
 
@@ -18,10 +18,11 @@ function handleSubmit(e){
    const userName = document.getElementById('user').value;
    const passWord = document.getElementById('password').value;
 
-   console.log({userName, passWord});
+   //console.log({userName, passWord});
 
    if(passWord === '123456'){
-        pushLocation(`/home/${userName}/${passWord}`);
+        sessionStorage.setItem('userName', userName);
+        pushLocation(`/home`); 
    }else{
         setIncorrect(true);
    }
@@ -38,36 +39,36 @@ function handleSubmit(e){
 
         <div className="container">
             <div className="row margin-center-styles">
-            <div className="card col-6">
+                <div className="card col-6">
     
-                <h1 className="text-center">Sign In</h1>
+                    <h1 className="text-center">Sign In</h1>
 
-                <form onSubmit={handleSubmit} >
-                    <div className="form-group">
-                        <label>Username</label>
-                        <input
-                        className="form-control"
-                        type="text" id="user"
-                        name="email" required
-                        />
-                    </div>
+                    <form onSubmit={handleSubmit} >
+                        <div className="form-group">
+                            <label>Username</label>
+                            <input
+                            className="form-control"
+                            type="text" id="user"
+                            name="email" required
+                            />
+                        </div>
 
-                    <div className="form-group">
-                        <label>Password</label>
-                        <input
-                        className="form-control"
-                        type="text" id="password"
-                        name="passwordname" required
-                        />
-                    </div>
+                        <div className="form-group">
+                            <label>Password</label>
+                            <input
+                            className="form-control"
+                            type="text" id="password"
+                            name="passwordname" required
+                            />
+                        </div>
 
-                    <div className="text-center mb-3">
-                        <button onClick={handleOnClick} className="btn btn-primary btn-lg">
-                            Enter
-                        </button>
-                    </div>
-                
-                </form>
+                        <div className="text-center mb-3">
+                            <button className="btn btn-primary btn-lg">
+                                Enter
+                            </button>
+                        </div>
+                    
+                    </form>
         
                 </div>
             </div>

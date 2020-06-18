@@ -1,8 +1,7 @@
 import React, { Fragment } from 'react';
+import { Route } from "wouter"
 import Login from "./pages/login";
-/* import { BrowserRouter, Switch, Route } from 'react-router-dom'; */
-import { Link, Route } from "wouter"
-import home from './pages/home';
+import Home from './pages/home';
 
 function App() {
   return (
@@ -10,8 +9,7 @@ function App() {
     <Fragment>  
   
         <Route path="/" component={Login} />
-        <Route path="/Home/:user/:id" component={home} />
-        { /*<Route component={NotFound} /> */}
+        <Route path="/home" component={Home} />
      
     </Fragment>
 
@@ -19,8 +17,3 @@ function App() {
 }
 
 export default App;
-
-
-    /*<div className="App">
-
-  </div> */
