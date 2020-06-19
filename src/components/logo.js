@@ -16,10 +16,11 @@ export default function Logo(){
     }
 
     return( <div className="row justify-content-center mt-3">
-            <h1 className="text-center">
+            <h1 className="text-center logo-styles">
                 <Link onClick={handleHome} to={`/home`} className="text-decoration-none">Pictures App</Link> 
             </h1>
         </div>
     );
 
 }
+

@@ -1,5 +1,6 @@
 import React, { useEffect, useState, Fragment } from "react";
 import { useLocation } from "wouter";
+import "../styles/login.css";
 
 export default function Login(){
 
@@ -31,13 +32,14 @@ function handleSubmit(e){
     
     <Fragment>
   
-        {(incorrect) ? <div className="alert alert-danger container" role="alert" >
-            <h5>Incorrect password!</h5>
-        </div>  : '' } 
+        {(incorrect) ? <div className="container">
+            <div className="row alert alert-danger alert-margin-movil"role="alert">
+            <h5>Incorrect password!</h5></div>
+        </div> : '' } 
 
         <div className="container">
             <div className="row margin-center-styles">
-                <div className="card col-6">
+                <div className="card form-margin-movil col-12 col-sm-10 col-lg-6 col-xl-6">
     
                     <h1 className="text-center">Sign In</h1>
 
@@ -77,3 +79,15 @@ function handleSubmit(e){
 
 }
 
+
+/*
+
+<div className="alert alert-danger container" role="alert" >
+            <h5>Incorrect password!</h5>
+        </div> 
+
+
+
+
+ style="margin-right: 30px;"
+*/

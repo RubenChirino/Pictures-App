@@ -15,7 +15,7 @@ export default function Header(){
 
     return(
     <div id="header">
-        <div id="title"><span className="text-header-styles">Pictures App</span></div>
+        <div id="title"><span className="text-header-styles logo-styles">Pictures App</span></div>
 
         <div id="menu-btn" onClick={handleMenu}>
            <div className="btn-hamburguer"></div>

@@ -1,9 +1,10 @@
 import React, { Fragment } from "react";
-import { useLocation, Link } from "wouter";
+import { useLocation } from "wouter";
 import useDetailPicture from "../hooks/useDetailPicture";
 import SideBar from "../components/sidebar";
 import DetailPicture from "../components/detailPicture";
 import Logo from "../components/logo";
+import Loading from "../components/loading";
 
 export default function Detail( { params } ){
 
@@ -25,21 +26,17 @@ export default function Detail( { params } ){
 
         <div id="main-container" className="container"> 
 
-          <Logo />
-
-          <div className="row justify-content-center mb-4">   
-            <DetailPicture detailPicture={detailPicture} />  
-          </div>
-
+            <Logo />
+      
+            { loadingDetail ? <Loading /> :
+            <div className="row justify-content-center mb-4">   
+              <DetailPicture detailPicture={detailPicture} />  
+            </div>       
+            }
+     
         </div>
 
       </Fragment>
     );
 
 }
-
-/*
-
-
-
-*/

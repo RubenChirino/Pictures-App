@@ -100,7 +100,7 @@ body{
 }
 
 .color-username{
-    color: var(--lime-green);
+    color: var(--electron-blue);
 }
 
 /*
@@ -149,7 +149,7 @@ body{
 }
 
 .check-modes-styles{
-    margin-left: 20px;
+    /*margin-left: 20px;*/
 }
 
 .color-options{

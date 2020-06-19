@@ -63,11 +63,18 @@ export default function Options({ logout }){
 
             <div className="item" id="photo">
                 <div className="option">
-                    <div className="icon"><img src={logout} alt="" /></div>
-                    <div className="title">
-                    <span className="color-options">Cloud Services</span>
-                    <input onChange={handleDarkMode} type="checkbox" id="darkModeCheck" checked={checked} className="form-check-input check-modes-styles" />
+
+                    <div className="icon text-center">
+                        <input onChange={handleDarkMode} type="checkbox" 
+                        id="darkModeCheck" checked={checked} className="check-modes-styles" />
+                        <label htmlFor="checkbox"></label>
                     </div>
+
+                    <div className="title">
+                    <span className="color-options">Dark Mode</span>
+                    
+                    </div>
+
                 </div>
             </div>
 

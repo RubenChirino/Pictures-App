@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import getPictures from "../services/getPisctures";
 
     const INITIAL_PAGE = 1;
