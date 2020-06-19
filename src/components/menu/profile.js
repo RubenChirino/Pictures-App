@@ -7,7 +7,7 @@ export default function Profile({ avatar }){
    return(
 
     <div id="profile"> 
-        <div id="photo"><img src={avatar} alt="" /></div>
+        <div id="photo"><img src={avatar} alt="profile-img" /></div>
 
         <div id="name"><span className="color-username" >{userName}</span></div>
     </div>

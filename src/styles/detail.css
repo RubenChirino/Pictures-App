@@ -1,0 +1,22 @@
+.title-detail-picture{
+    display: inline;
+}
+
+.size-img-text{
+  float: right;
+  color: var(--cardTitle);
+}
+
+.website-detail-text{
+  color: var(--lime-green);
+  font-weight: normal;
+}
+
+@media screen and (max-width: 992px) {
+  .title-detail-picture {
+    display: inherit;
+  }
+  .size-img-text{
+    float: inherit;
+  }
+}

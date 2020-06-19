@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
-import loadingImg from "../images/loading3.png";
+import "../styles/loading.css"
+import loadingImg from "../images/loading.png";
 
 export default function Loading(){
 

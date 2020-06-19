@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import { useLocation } from "wouter";
+import "../styles/detail.css";
 import useDetailPicture from "../hooks/useDetailPicture";
 import SideBar from "../components/sidebar";
 import DetailPicture from "../components/detailPicture";

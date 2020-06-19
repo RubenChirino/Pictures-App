@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import getDetailPicture from "../services/getDetailPicture";
 
 
-export default function useDetailPicture({params}){
+export default function useDetailPicture({params}){ 
  
     const [loadingDetail, setLoadingDetail] = useState(false);
 
@@ -23,7 +23,7 @@ export default function useDetailPicture({params}){
             }); 
         }
 
-    }, [userName]) 
+    }, [userName, params]) 
 
 
     return { loadingDetail,  detailPicture}  

@@ -2,14 +2,13 @@ import React from "react";
 import { useLocation, Link  } from "wouter";
 import handleSideBar from "../helpers/handleSideBar";
 
-export default function Logo(){
+export default function Logo(){ 
 
-    const [path, pushLocation] = useLocation();
+    const [path] = useLocation();
 
     function handleHome(){
 
-        if(path !== '/home'){
-          
+        if(path !== '/home'){        
             handleSideBar(); 
         }    
   

@@ -1,0 +1,14 @@
+.size-img-loading{
+    width: 10%;
+    margin: auto;
+  }
+  
+  .loading-margin-movil{
+    min-height: 80vh;
+  }
+  
+  @media screen and (max-width: 575px) {
+    .loading-margin-movil{
+      min-height: 50vh;
+    }
+  }

@@ -1,0 +1,11 @@
+.images-sizes{
+    height: 231.45px; 
+  }
+  
+  .card{
+    background: var(--cardGray);
+  }
+  
+  .title-card-color{
+    color: var(--baseColor);
+  }

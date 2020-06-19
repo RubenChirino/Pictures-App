@@ -12,6 +12,7 @@ function App() {
         <Route path="/" component={Login} />
         <Route path="/home" component={Home} />
         <Route path="/detail/:id" component={Detail} />
+        <Route path="/404" component={() => <h1>404 ERROR :(</h1>} />
      
     </Fragment>
 

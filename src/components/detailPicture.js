@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from 'wouter'
 
 export default function DetailPicture({ detailPicture }){
 
@@ -12,7 +11,8 @@ export default function DetailPicture({ detailPicture }){
                     <h4 className="title-detail-picture">{`Author: ${detailPicture.author}`}</h4>  
                     <span className="size-img-text title-detail-picture"> 
                     {`Original size: ${detailPicture.width}x${detailPicture.height}`} </span>
-                    <p><strong className="website-detail-text">Sitio Web:</strong><a target="_blank" href={detailPicture.url} 
+                    <p><strong className="website-detail-text">Sitio Web:</strong>
+                    <a target="_blank" rel="noopener noreferrer" href={detailPicture.url} 
                     className='text-decoration-none'> {detailPicture.author}</a></p>        
                 </div>
             </div>            

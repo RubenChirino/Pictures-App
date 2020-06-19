@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
-import { useLocation, Link } from "wouter";
+import { useLocation } from "wouter";
 import usePictures from "../hooks/usePictures";
+import "../styles/home.css";
 import ListOfPictures from "../components/ListOfPictures";
 import SideBar from "../components/sidebar"; 
 import Logo from "../components/logo";

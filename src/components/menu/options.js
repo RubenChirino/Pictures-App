@@ -54,7 +54,7 @@ export default function Options({ logout }){
 
             <div className="item" id="photo">
                 <div className="option" onClick={handleLogOut}>
-                    <div className="icon"><img src={logout} alt="" /></div>
+                    <div className="icon"><img src={logout} alt="logout-img" /></div>
                     <div className="title"><span className="color-options">Logout</span></div>
                 </div>
             </div>
