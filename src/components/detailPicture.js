@@ -12,13 +12,11 @@ export default function DetailPicture({ detailPicture }){
                     <h4 className="title-detail-picture">{`Author: ${detailPicture.author}`}</h4>  
                     <span className="size-img-text title-detail-picture"> 
                     {`Original size: ${detailPicture.width}x${detailPicture.height}`} </span>
-                    <p>Sitio Web: <a target="_blank" href={detailPicture.url} 
-                    className=''>{detailPicture.author}</a></p>        
+                    <p><strong className="website-detail-text">Sitio Web:</strong><a target="_blank" href={detailPicture.url} 
+                    className='text-decoration-none'> {detailPicture.author}</a></p>        
                 </div>
             </div>            
         </div>
     );
 
 }
-
-//${}

@@ -45,7 +45,7 @@ function handleSubmit(e){
 
                     <form onSubmit={handleSubmit} >
                         <div className="form-group">
-                            <label>Username</label>
+                            <label className="login-label-color">Username</label>
                             <input
                             className="form-control"
                             type="text" id="user"
@@ -54,7 +54,7 @@ function handleSubmit(e){
                         </div>
 
                         <div className="form-group">
-                            <label>Password</label>
+                            <label className="login-label-color">Password</label>
                             <input
                             className="form-control"
                             type="text" id="password"

@@ -9,7 +9,7 @@ export default function Profile({ avatar }){
     <div id="profile"> 
         <div id="photo"><img src={avatar} alt="" /></div>
 
-        <div id="name"><span>{userName}</span></div>
+        <div id="name"><span className="color-username" >{userName}</span></div>
     </div>
 
    );

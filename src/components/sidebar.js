@@ -4,7 +4,7 @@ import logoutImg from "../images/logout.png"
 import Header from "./menu/header";
 import Profile from "./menu/profile";
 import Options from "./menu/options";
-import "../styles/sidebar.css";
+import "../styles/sidebar.css"; 
 
 export default function SideBar(){
    

@@ -1,20 +1,42 @@
-body {
+body { 
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: var(--baseBackground);
+  color: var(--baseColor) ;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
 }
 
-body{
-  background-color: black;
+/* Global Var */
+
+:root{ 
+
+  --cardGray: #f0f3fa;
+  --baseBackground: white; 
+  --baseColor: #1d2029;
+
+  --gray: #8088ad;
+  --lime-green: hsl(163, 72%, 41%);
+  --electron-blue: hsl(203, 89%, 53%);
+  --lightGray: #f8f9fe;
+  
+  --cardTitle: #6f717e;
+     
+  --hovercolor: rgb(23, 23, 23);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+/* 
+
+Form (Login)
+
+*/
  
 .margin-center-styles {
   display: flex;
@@ -23,9 +45,33 @@ code {
   min-height: 100vh;
 }
 
+.login-label-color{
+  color: var(--gray);
+}
+
+/*
+
+Cards (Home)
+
+*/
+
 .images-sizes{
   height: 231.45px; 
 }
+
+.card{
+  background: var(--cardGray);
+}
+
+.title-card-color{
+  color: var(--baseColor);
+}
+
+/*
+
+Cards (Detail)
+
+*/
 
 .title-detail-picture{
     display: inline;
@@ -33,6 +79,12 @@ code {
 
 .size-img-text{
   float: right;
+  color: var(--cardTitle);
+}
+
+.website-detail-text{
+  color: var(--lime-green);
+  font-weight: normal;
 }
 
 @media screen and (max-width: 992px) {
@@ -42,4 +94,49 @@ code {
   .size-img-text{
     float: inherit;
   }
+}
+
+/*
+
+Dark and Light Mode
+
+*/
+
+@media (prefers-color-scheme: dark) {
+
+  :root {
+    --cardGray: #252b43;
+    --baseBackground: #1d2029;
+    --baseColor: white;
+
+    --gray: #8088ad;
+    --lightGray: #1d2029;
+    --cardTitle: #8088ad;
+
+    --hovercolor: rgb(23, 23, 23);
+  }
+}
+
+.is-dark-mode {
+  --cardGray: #252b43;
+  --baseBackground: #1d2029;
+  --baseColor: white;
+
+  --gray: #8088ad;
+  --lightGray: #1d2029;
+  --cardTitle: #8088ad;
+ 
+  --hovercolor: rgb(23, 23, 23);
+}
+
+.is-light-mode {
+  --cardGray: #f0f3fa;
+  --baseBackground: white;
+  --baseColor: #1d2029;
+  
+  --gray: #5f616d;
+  --lightGray: #f8f9fe;
+  --cardTitle: #6f717e;
+  
+  --hovercolor: rgb(230, 230, 230);
 }
