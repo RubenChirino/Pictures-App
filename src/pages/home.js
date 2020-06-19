@@ -1,10 +1,11 @@
 import React, { Fragment } from "react";
-import { useLocation } from "wouter";
+import { useLocation, Link } from "wouter";
 import usePictures from "../hooks/usePictures";
 import ListOfPictures from "../components/ListOfPictures";
 import SideBar from "../components/sidebar"; 
+import Logo from "../components/logo";
 
-export default function Home(){  
+export default function Home(){   
 
     const [path, pushLocation] = useLocation();
 
@@ -23,26 +24,24 @@ export default function Home(){
 
     return( <Fragment>
          
-    <SideBar />
+        <SideBar />
 
-    <div id="main-container" className="container"> { /* container */ }
+        <div id="main-container" className="container"> 
 
-        <h1>Hola a todos!</h1>
+            <Logo />
 
-        <div className="row mt-4">   
-            <ListOfPictures pictures={pictures} /> 
-        </div>
-       
-        <div className="row justify-content-center mt-5 mb-3">
-
-            <div className="col-4 text-center">
-                <button className="btn btn-primary btn-lg" 
-                onClick={handleNextPage}>Get next page</button>
+            <div className="row">   
+                <ListOfPictures pictures={pictures} /> 
             </div>
-            
-        </div>
+        
+            <div className="row justify-content-center mt-5 mb-3">
+                <div className="col-4 text-center">
+                    <button className="btn btn-primary btn-lg" 
+                    onClick={handleNextPage}>Get next page</button>
+                </div>          
+            </div>
 
-    </div>
+        </div>
 
     </Fragment> 
     );

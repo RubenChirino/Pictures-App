@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "wouter";
+import HandleSideBar from "../../helpers/handleSideBar";
 
 export default function Options({ logout }){
 
@@ -8,13 +9,8 @@ export default function Options({ logout }){
     const [checked, setChecked] = useState(false);
 
     function handleLogOut(){
-      
-        const menu = document.querySelector('#sidemenu');
 
-        menu.classList.toggle("menu-expanded");
-        menu.classList.toggle("menu-collapsed");
-    
-        document.querySelector('body').classList.toggle('body-expanded');
+        HandleSideBar();
 
         sessionStorage.clear(); 
         pushLocation('/');
@@ -25,8 +21,8 @@ export default function Options({ logout }){
      setChecked(e.target.checked); 
      
      if(e.target.checked){
-        document.body.classList.remove('is-light-mode')
-        document.body.classList.add('is-dark-mode')
+            document.body.classList.remove('is-light-mode')
+            document.body.classList.add('is-dark-mode')
         }else{
             document.body.classList.remove('is-dark-mode')
             document.body.classList.add('is-light-mode')

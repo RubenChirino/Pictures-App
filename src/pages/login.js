@@ -18,8 +18,6 @@ function handleSubmit(e){
    const userName = document.getElementById('user').value;
    const passWord = document.getElementById('password').value;
 
-   //console.log({userName, passWord});
-
    if(passWord === '123456'){
         sessionStorage.setItem('userName', userName);
         pushLocation(`/home`); 
@@ -33,7 +31,7 @@ function handleSubmit(e){
     
     <Fragment>
   
-        {(incorrect) ? <div className="alert alert-danger" role="alert" >
+        {(incorrect) ? <div className="alert alert-danger container" role="alert" >
             <h5>Incorrect password!</h5>
         </div>  : '' } 
 

@@ -57,17 +57,17 @@ body{
 }
 
 #sidemenu #header #menu-btn:hover{
-    background-color: var(--hovercolor);  /*  */
+    background-color: var(--hovercolor);  
 }
 
 #sidemenu #header #menu-btn .btn-hamburguer{
-    background-color: var(--electron-blue);  /* #fff */
+    background-color: var(--electron-blue); 
     width: 100%;
     height: 2px;
     margin: 5px 0;
 }
 
-.color-header{
+.text-header-styles{
     color: var(--electron-blue);
 }
 
