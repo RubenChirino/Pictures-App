@@ -2,6 +2,8 @@
 
 Pictures-App is an application made with React.js, It has a login, home and detail pages, It also has loading features, dark mode and an API call to display images and information.
 
+![](src/images/screenshot.png)
+
 ## To use this application use the following commands
 
 In the project directory, you can run:
