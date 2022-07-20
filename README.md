@@ -2,6 +2,8 @@
 
 Pictures-App is an application made with React.js, It has a login, home and detail pages, It also has loading features, dark mode and an API call to display images and information.
 
+Note: To Sign In you only have to set the password: 123456, the user can be any value.
+
 ![](src/images/screenshot.png)
 
 ## To use this application use the following commands
